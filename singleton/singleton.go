@@ -39,15 +39,26 @@ func getMongoSession(url string) *MClient {
 }
 
 func Test() {
-	for i := 0; i < 10000; i++ {
+	for i := 0; i < 100; i++ {
 		go func(ii int) {
-			// d.getCollect()
 			getMongoSession("111")
-			// getMongoSession("222")
-			// fmt.Println(">>> ", ii, c.Age)
 
 		}(i)
 	}
 
+	for i := 0; i < 10; i++ {
+		go func(ii int) {
+			v := GetLazyInstance()
+			v.Echo()
+		}(i)
+	}
+
+	for i := 0; i < 10; i++ {
+		go func(ii int) {
+			GetInstance()
+		}(i)
+	}
+
 	time.Sleep(3 * time.Second)
+
 }

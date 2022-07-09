@@ -11,3 +11,9 @@ go run generator/main.go
 ```
 go run utils/main.go
 ```
+
+## singleton 单例测试
+
+```
+go run -race main.go singleton
+```
