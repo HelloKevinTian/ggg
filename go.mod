@@ -3,7 +3,7 @@ module ggg
 go 1.16
 
 require (
-	github.com/3th1nk/cidr v0.2.0 // indirect
+	github.com/3th1nk/cidr v0.2.0
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/go-resty/resty/v2 v2.6.0
