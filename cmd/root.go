@@ -24,6 +24,7 @@ func init() {
 	rootCmd.AddCommand(utilsCmd)
 	rootCmd.AddCommand(generatorCmd)
 	rootCmd.AddCommand(singletonCmd)
+	rootCmd.AddCommand(examplesCmd)
 }
 
 func Execute() {

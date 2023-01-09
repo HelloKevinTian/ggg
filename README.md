@@ -1,5 +1,11 @@
 # ggg
 
+## 一些测试的例子
+
+```
+go run main.go examples testMD5
+```
+
 ## generator 代码生成器
 
 ```
