@@ -19,7 +19,7 @@ import (
 	"time"
 )
 
-//定义函数映射表
+// 定义函数映射表
 var funcs = map[string]interface{}{
 	"test":            test,
 	"testMD5":         testMD5,

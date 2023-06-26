@@ -32,7 +32,7 @@ func testRateAllow() {
 }
 
 func testRateWait() {
-	limiter := rate.NewLimiter(rate.Every(1000*time.Millisecond), 1)
+	limiter := rate.NewLimiter(rate.Every(2000*time.Millisecond), 5)
 
 	ctx, cancel := context.WithTimeout(context.Background(), 50*time.Second)
 	defer cancel()
