@@ -65,6 +65,7 @@ var funcs = map[string]interface{}{
 	"TestErrGroup":     some.TestErrGroup,
 	"TestContext":      some.TestContext,
 	"TestCIDR":         some.TestCIDR,
+	"TestAggregator":   some.TestAggregator,
 }
 
 func RunExamples() {
