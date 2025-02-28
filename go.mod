@@ -11,9 +11,11 @@ require (
 	github.com/json-iterator/go v1.1.10
 	github.com/onsi/gomega v1.13.0 // indirect
 	github.com/prometheus/client_golang v0.9.3
+	github.com/redis/go-redis/v9 v9.7.0
 	github.com/sony/gobreaker v0.4.1
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/viper v1.7.1
+	github.com/vmihailenco/msgpack/v5 v5.4.1
 	go.mongodb.org/mongo-driver v1.4.3
 	go.uber.org/ratelimit v0.2.0
 	go.uber.org/zap v1.16.0

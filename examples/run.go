@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"ggg/examples/dao"
 	"ggg/examples/helper"
+	"ggg/examples/pkg/delayqueue"
 	"ggg/examples/some"
 	"ggg/examples/some/container"
 	"ggg/examples/some/somesort"
@@ -45,27 +46,29 @@ var funcs = map[string]interface{}{
 	"TestCircleQueue":   container.TestCircleQueue,
 	"TestTreeDFS":       container.TestTreeDFS,
 
-	"TestHTTPServer":   some.TestHTTPServer,
-	"TestGinServer":    some.TestGinServer,
-	"TestBTree":        some.TestBTree,
-	"TestEmbed":        some.TestEmbed,
-	"TestSession":      some.TestSession,
-	"TestReflect":      some.TestReflect,
-	"InvokeRouter":     some.InvokeRouter,
-	"TestViper":        some.TestViper,
-	"TestLock":         some.TestLock,
-	"BatchN":           some.BatchN,
-	"SendRambler":      some.SendRambler,
-	"TestSort":         some.TestSort,
-	"TestRate":         some.TestRate,
-	"TestbiSearch":     some.TestbiSearch,
-	"TestBreaker":      some.TestBreaker,
-	"StartGachaServer": some.StartGachaServer,
-	"TestBatch":        some.TestBatch,
-	"TestErrGroup":     some.TestErrGroup,
-	"TestContext":      some.TestContext,
-	"TestCIDR":         some.TestCIDR,
-	"TestAggregator":   some.TestAggregator,
+	"TestHTTPServer":      some.TestHTTPServer,
+	"TestGinServer":       some.TestGinServer,
+	"TestBTree":           some.TestBTree,
+	"TestEmbed":           some.TestEmbed,
+	"TestSession":         some.TestSession,
+	"TestReflect":         some.TestReflect,
+	"InvokeRouter":        some.InvokeRouter,
+	"TestViper":           some.TestViper,
+	"TestLock":            some.TestLock,
+	"BatchN":              some.BatchN,
+	"SendRambler":         some.SendRambler,
+	"TestSort":            some.TestSort,
+	"TestRate":            some.TestRate,
+	"TestbiSearch":        some.TestbiSearch,
+	"TestBreaker":         some.TestBreaker,
+	"StartGachaServer":    some.StartGachaServer,
+	"TestBatch":           some.TestBatch,
+	"TestErrGroup":        some.TestErrGroup,
+	"TestContext":         some.TestContext,
+	"TestCIDR":            some.TestCIDR,
+	"TestAggregator":      some.TestAggregator,
+	"TestMsgpack":         some.TestMsgpack,
+	"TestRedisDelayQueue": delayqueue.TestRedisDelayQueue,
 }
 
 func RunExamples() {
